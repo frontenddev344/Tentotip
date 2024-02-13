@@ -1,0 +1,678 @@
+html,
+body,
+#banner {
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+  width: 100% !important;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+
+}
+@font-face {
+  font-family:heading_font;
+  src: url(../fonts/CormorantGaramond-Bold.ttf);
+}
+.section {
+  padding: 80px 0;
+}
+
+:root {
+  --primary-color: #c77a63;
+  --bg_color: #faf5f2;
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color);
+  font-family: heading_font;
+  font-weight: bold;
+
+}
+
+p {
+
+  color: #222222;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+li {
+  color: #222222;
+  line-height: 26px;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.heading_h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px !important;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.button {
+  background: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  text-transform: capitalize;
+  display: inline-block;
+  border-radius: 4px;
+  position: relative;
+  border: 3px solid #c77a63;
+  background-image: -webkit-linear-gradient(30deg, #c77a63 50%, transparent 50%);
+  background-image: linear-gradient(30deg, #c77a63  50%, transparent 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 0.5s ease-in-out;
+}
+
+.button:hover {
+  transition: 0.5s;
+  color: #000 !important;
+  background-color: #fff;
+  background-position: 110%;
+}
+
+/* /header/ */
+
+
+.nav {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  padding: 15px 60px;
+  text-transform: uppercase;
+
+}
+
+.nav>.nav-header {
+  flex: 0.95;
+  padding-left: 1rem;
+}
+
+.nav>.nav-header>.nav-title {
+  font-size: 22px;
+  color: #000;
+}
+
+.nav>.nav-list {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0;
+}
+
+.nav>.nav-list>li {
+  list-style-type: none;
+}
+
+.nav>.nav-list>li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav>.nav-list>li a.active {
+  color: #fff
+}
+
+.nav>.nav-list>li a:hover {
+  color: #fff
+}
+
+.nav>#nav-check {
+  display: none;
+}
+
+header {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.nav-title a img {
+  max-width: 200px;
+
+}
+
+
+/* banner */
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.sub_banner img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.sub_banner {
+  position: relative;
+}
+
+.sub_banner_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  margin-top: 70px;
+  width: 100%;
+}
+
+.sub_banner::before {
+  position: absolute;
+  content: '';
+  background: #000000a8;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Destinations en Vedette  */
+
+.why_card img {
+  max-width: 60px;
+}
+
+.whychooseus h2 {
+  margin-bottom: 60px;
+  color: var(--primary-color);
+}
+
+.why_card h3 {
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.why_card {
+  text-align: center;
+  border-radius: 5px;
+  height: 100%;
+  padding: 30px 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.5s;
+}
+.why_card:hover{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ background-color: var(--bg_color);
+}
+
+
+.why_card p {
+  line-height: 26px;
+
+}
+
+/* 
+Journey-begins */
+
+.journey-begins {
+  position: relative;
+  padding: 60px 15px;
+}
+
+.journey-begins:after {
+  content: "";
+  background: #faf5f2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+.lower_banner.section {
+  background: #faf5f2;
+}
+.journey-inner {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.journey-inner h2 {
+  margin-bottom: 20px;
+}
+
+/* Casinos les plus recommandés*/
+
+.hotel_card .hotel_des {
+  padding: 30px 20px;
+}
+
+.hotel_card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.hotel_card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* best_casino_vages */
+
+.best_casino_vages {
+  background-color: whitesmoke;
+}
+
+.best_casino_vages img {
+  border-radius: 15px;
+}
+
+.left_side_vegas ul li {
+  margin: 8px 0;
+}
+
+.best_casino_vages .even {
+  flex-direction: row-reverse;
+}
+
+.journey-beginsinlasvegas p {
+  font-size: 20px;
+}
+
+
+/* <!-- planing hotel section --> */
+
+.hotel_f_card {
+  text-align: center;
+  border: 1px solid;
+  height: 100%;
+  padding: 30px 20px;
+}
+
+.hotel_f_card i {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.grey_scale_img {
+  transition: 0.5s all;
+  border-radius: 15px;
+}
+
+.grey_scale_img:hover {
+  filter: grayscale(1);
+}
+
+/***footer**/
+.footer {
+  background: var(--primary-color);
+  padding: 40px 0 0;
+  text-align: center;
+}
+
+.footer img {
+  width: 150px;
+  filter: brightness(0) invert(1);
+}
+
+footer ul {
+  padding-top: 10px;
+}
+
+footer h3 {
+  color: #fff;
+  font-size: 24px;
+  margin: 40px 0 20px;
+}
+
+footer li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  text-transform: capitalize;
+}
+
+.footer_icon ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.footer_icon li a {
+  font-size: 26px;
+}
+
+.footer li a:hover {
+  text-decoration: underline;
+}
+
+.footer_box ul li:not(:last-child) {
+  margin-right: 22px;
+}
+
+.footer_box ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  padding-top: 0;
+  justify-content: center;
+  list-style: none;
+}
+
+footer .row {
+  align-items: flex-end;
+}
+
+.footer_box a {
+  line-height: 26px;
+}
+
+.footer_icon {
+  background: #fff;
+  padding: 10px 0;
+}
+
+.footer_icon li a {
+  color: var(--primary-color);
+}
+
+footer ul.nav-list {
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+/****cookies*****/
+.cookie-alert {
+  align-items: baseline;
+  background: #fff;
+  left: auto;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  bottom: 0px;
+  display: none;
+  border-top: 2px solid var(--primary-color);
+}
+
+.cookie-alert.show {
+  display: block;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+}
+
+.cookie-alert .card-body {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 3rem;
+}
+
+.cookie-content {
+  width: 85%;
+  padding-right: 10px;
+}
+
+.accept-btn {
+  width: 15%;
+}
+
+.accept-cookies {
+  display: block;
+  text-align: center;
+}
+
+.cookie-content p {
+  margin: 0;
+  padding-right: 10px;
+}
+
+.cookie-content h4 {
+  color: var(--primary-color);
+}
+
+/* <!-- best casino in  monaco --> */
+
+.casino_in_monaco .odd_casino_monaco {
+  flex-direction: row-reverse;
+}
+.right_monaco a img {
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
+}
+
+
+/* accordian */
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0,0,0,.125);
+}
+.accordion-body h4 {
+  font-size: 20px;
+}
+
+.accordion h3 {
+  margin-bottom: 0;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--primary-color);
+  background-color: var(--bg_color);
+  box-shadow:unset;
+}
+/****************privacy policy**********************/
+section.privacy-term-sec {
+  padding: 200px 0 60px;
+}
+
+.privacy-term-sec .heading_h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 3px dashed var(--primary-color);
+  border-radius: 22px;
+  padding-bottom: 15px;
+  display: inline-block;
+  width: 100%;
+}
+
+.privacy-term-content h3 {
+  font-size: 20px;
+  margin-top: 40px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.privacy-term-content ul li {
+  padding-bottom: 10px;
+}
+.right_side_banner.text-center img {
+  border-radius: 8px;
+}
+div#banner h1, div#banner h2 {
+  color: #fff;
+}
+
+/* macau */
+
+.macau_casinos_section .right_monaco a img {
+  width: 300px;
+}
+
+
+.casino_page_section .right_monaco {
+  text-align: right;
+  height: 100%;
+}
+.casino_wrapper {
+  border-radius: 0px 60px 60px 0px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* padding: 30px 20px; */
+}
+
+
+.casino_page_section .right_monaco a img
+{
+  border-radius: 0px 60px 60px 0px;
+  height: 100%;
+}
+.casino_wrapper .left_monaco h2 {
+  position: relative;
+}
+.casino_wrapper .left_monaco h2::before {
+  position: absolute;
+  content: '';
+  width: 150px;
+  height: 2px;
+  background: var(--primary-color);
+  bottom: -5px;
+  border-radius: 15px;
+}
+.casino_wrapper .left_monaco {
+  padding: 20px;
+}
+.casino_page_section{
+  background-color:whitesmoke;
+}
+
+/* 
+singapore */
+
+.inner_mid_singapore {
+  padding: 20px;
+  height: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
+}
+.inner_mid_singapore h2 {
+  margin-top: 20px;
+}
+
+.sand_resorts.section h4 {
+  margin-bottom: 20px;
+}
+.sand_resort_inner ul li {
+  margin-bottom: 16px;
+}
+.sand_resort_inner ul{
+  padding: 0;
+}
+.sand_resorts{
+  background-color: var(--bg_color);
+}
+.singapore_bottom{
+  background-color: whitesmoke;
+}
+.singapore_bottom p{
+  font-size: 20px;
+}
+/*****contact*****/
+.contact-section {
+  padding: 60px 0;
+  }
+  
+  .contact-content h3 {
+  font-size: 20px;
+  color: var(--primary-color);
+  }
+  
+  .contact-content a {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  background-color: rgb(255 255 0 / 30%);
+  }
+  
+  .contact-form input, .contact-form textarea {
+  margin-bottom: 20px;
+  padding: 12px 10px;
+  resize: none;
+  }
+  
+  .contact-form .button {
+  width: 200px;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus{
+    outline:none;
+    box-shadow:none;
+    border: 1px solid var(--primary-color);
+  }
+  
+  .contact-form input::placeholder, .contact-form textarea::placeholder{
+    opacity:0.6;
+  }
+  .contact-content p span {
+    background: #e9eea3;
+}
+
+
+  /* new testing changes */
+
+  .home_banner img {
+    height: 600px;
+}
+
+.lower_footer {
+  background: #c77a63;
+}
+.lower_footer p{
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+h2{
+  font-size: 35px!important;
+  color: #000!important;
+}
+.casino_in_monaco.section.macau_casinos_section .right_monaco {
+  text-align: center;
+}
+.casino_in_monaco.section.macau_casinos_section .left_monaco {
+  border-top: 1px solid #c77a63;
+  border-bottom: 1px solid #c77a63;
+  padding: 30px 0;
+}
