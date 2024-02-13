@@ -672,3 +672,7 @@ h2{
   border-bottom: 1px solid #c77a63;
   padding: 30px 0;
 }
+
+img{
+  opacity: 0;
+}
