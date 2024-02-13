@@ -507,7 +507,6 @@ section.privacy-term-sec {
   color: var(--primary-color);
   text-align: center;
   margin-bottom: 40px;
-  border-bottom: 3px dashed var(--primary-color);
   border-radius: 22px;
   padding-bottom: 15px;
   display: inline-block;
@@ -534,9 +533,6 @@ div#banner h1, div#banner h2 {
 
 /* macau */
 
-.macau_casinos_section .right_monaco a img {
-  width: 300px;
-}
 
 
 .casino_page_section .right_monaco {
