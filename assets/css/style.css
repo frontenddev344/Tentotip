@@ -617,7 +617,7 @@ singapore */
   display: inline-block;
   margin-bottom: 20px;
   color: var(--primary-color);
-  background-color: rgb(255 255 0 / 30%);
+  background-color:unset;
   }
   
   .contact-form input, .contact-form textarea {
